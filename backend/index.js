@@ -1,9 +1,9 @@
 const express=require('express');
 const {connectToDB}=require('./connection');
-const {signupRouter} = require('./routes/auth/signup');
-const {loginRouter} = require('./routes/auth/login');
-const { profileRouter } = require('./routes/auth/profiles');
-const {checkAuthRouter}=require('./routes/auth/checkAuth');
+const {signupRouter} = require('./routes/auth/signup.route');
+const {loginRouter} = require('./routes/auth/login.route');
+const { profileRouter } = require('./routes/auth/profiles.route');
+const {checkAuthRouter}=require('./routes/auth/checkAuth.route');
 const cookieParser=require("cookie-parser");
 require('dotenv').config();
 

@@ -1,5 +1,5 @@
 const express=require('express');
-const {verifyAuthentication}=require('../../middlewares/auth')
+const {verifyAuthentication}=require('../../middlewares/auth.middleware')
 
 const router=express.Router();
 

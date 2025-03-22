@@ -1,4 +1,4 @@
-const {User}=require('../../model/users');
+const {User}=require('../../model/users.model');
 const bcrypt=require('bcrypt');
 
 async function handleSignUp(req,res){
