@@ -4,6 +4,6 @@ const { verifyAuthentication } = require('../../middlewares/auth.middleware');
 
 const router=express.Router();
 
-router.route('/').post(verifyAuthentication,checkAuth);
+router.route('/').get(verifyAuthentication,checkAuth);
 
 module.exports={checkAuthRouter: router};

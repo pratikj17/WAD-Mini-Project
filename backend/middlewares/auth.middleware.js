@@ -8,7 +8,7 @@ async function verifyAuthentication(req,res,next){
         if(!token) return res.status(404).json({'error':'token not found!'});
         const verified=jwt.verify(token,process.env.JWT_SECRET);
         if(verified){
-            const user=await User.findById(verified.userId).select("-password");
+            const user=await User.findById(verified.id).select("-password");
             req.user=user;
             next();
         }
